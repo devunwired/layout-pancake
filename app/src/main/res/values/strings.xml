@@ -3,4 +3,7 @@
     <string name="item_name">Person\'s Name</string>
     <string name="item_title">Person\'s Title</string>
     <string name="item_phone">(303) 555-1234</string>
+    <string name="button_first">First Button</string>
+    <string name="button_second">Second Button</string>
+    <string name="button_third">Third Button</string>
 </resources>

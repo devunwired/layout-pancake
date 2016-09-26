@@ -11,30 +11,29 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/constraintLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_Percent="25" />
+        app:layout_constraintGuide_percent="0.25"/>
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/guideline50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_Percent="50" />
+        app:layout_constraintGuide_percent="0.5"/>
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/guideline75"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_Percent="75" />
+        app:layout_constraintGuide_percent="0.75"/>
 
     <EditText
         android:id="@+id/first_name"
@@ -44,9 +43,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:hint="First Name"
-        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout3"
-        app:layout_constraintRight_toLeftOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline50"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/last_name"
@@ -56,9 +55,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:hint="Last Name"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+        app:layout_constraintLeft_toLeftOf="@+id/guideline50"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/address"
@@ -68,9 +67,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:hint="Address"
-        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout3"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name"/>
 
     <EditText
         android:id="@+id/city"
@@ -81,9 +80,9 @@
         android:layout_marginTop="8dp"
         android:layout_row="2"
         android:hint="City/State"
-        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout3"
-        app:layout_constraintRight_toLeftOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/address" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline75"
+        app:layout_constraintTop_toBottomOf="@+id/address"/>
 
     <EditText
         android:id="@+id/zip"
@@ -93,9 +92,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:hint="ZIP"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/address" />
+        app:layout_constraintLeft_toLeftOf="@+id/guideline75"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -103,7 +102,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:text="Submit"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/zip" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zip"/>
 
 </android.support.constraint.ConstraintLayout>

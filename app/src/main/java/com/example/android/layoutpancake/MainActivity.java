@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "Simple List Item",
             "Centering Constraints",
             "Entry Form",
-            "Ratios"
+            "Weighted Vertical",
+            "Ratios",
+            "Any Size Ratios"
     };
 
     private static final int[] LAYOUT_IDS = {
@@ -24,7 +26,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             R.layout.list_item_flat,
             R.layout.layout_center,
             R.layout.layout_form,
-            R.layout.layout_ratios
+            R.layout.layout_weighted,
+            R.layout.layout_ratios,
+            R.layout.layout_ratios_any
     };
 
     @Override
