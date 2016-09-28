@@ -17,6 +17,9 @@
         <activity android:name=".LayoutDisplayActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".TransitionActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

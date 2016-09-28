@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Layout Pancake</string>
+    <string name="essay">Bacon ipsum dolor amet short ribs swine bacon ham chicken pancetta shankle cow bresaola picanha pastrami brisket ball tip flank. Kielbasa jowl brisket short ribs. Salami turkey kielbasa hamburger ball tip porchetta t-bone. Prosciutto fatback shankle ground round doner turkey strip steak pork chop ham andouille drumstick capicola pork spare ribs bresaola. Burgdoggen spare ribs kevin, sausage brisket hamburger pork chop ground round flank turducken boudin tail drumstick shank short loin. Tenderloin flank venison, tongue pork filet mignon t-bone meatloaf ribeye.</string>
     <string name="item_name">Person\'s Name</string>
     <string name="item_title">Person\'s Title</string>
     <string name="item_phone">(303) 555-1234</string>
     <string name="button_first">First Button</string>
     <string name="button_second">Second Button</string>
     <string name="button_third">Third Button</string>
+    <string name="button_next">Next</string>
+    <string name="button_cancel">Cancel</string>
 </resources>

@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "Entry Form",
             "Weighted Vertical",
             "Ratios",
-            "Any Size Ratios"
+            "Any Size Ratios",
+            "Animated Transition"
     };
 
     private static final int[] LAYOUT_IDS = {
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             R.layout.layout_form,
             R.layout.layout_weighted,
             R.layout.layout_ratios,
-            R.layout.layout_ratios_any
+            R.layout.layout_ratios_any,
+            R.layout.layout_transition_1
     };
 
     @Override
@@ -45,10 +47,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Intent intent = new Intent(this, LayoutDisplayActivity.class);
-        intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[position]);
-        intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[position]);
+        if (LAYOUT_IDS[position] == R.layout.layout_transition_1) {
+            Intent intent = new Intent(this, TransitionActivity.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, LayoutDisplayActivity.class);
+            intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[position]);
+            intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[position]);
 
-        startActivity(intent);
+            startActivity(intent);
+        }
     }
 }
