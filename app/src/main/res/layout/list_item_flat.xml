@@ -30,10 +30,10 @@
         android:layout_marginStart="8dp"
         android:text="@string/item_name"
         android:textAppearance="?android:textAppearanceMedium"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_title"
         app:layout_constraintLeft_toRightOf="@+id/image"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36"/>
+        app:layout_constraintVertical_chainPacked="true"/>
 
     <TextView
         android:id="@+id/text_title"
@@ -42,6 +42,7 @@
         android:layout_marginStart="8dp"
         android:text="@string/item_title"
         android:textAppearance="?android:textAppearanceMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/image"
         app:layout_constraintTop_toBottomOf="@+id/text_name"/>
 
